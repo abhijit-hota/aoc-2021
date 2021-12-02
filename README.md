@@ -4,7 +4,7 @@
 
 Welcome to the Submarine!
 
-## Note:
+### Note
 - Please don't submit solutions that are not in the repo yet.
 - You can suggest better alternatives for already present solutions.
 - Use your own input folder.
