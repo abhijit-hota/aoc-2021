@@ -17,15 +17,15 @@ def get_count_brute(initial, days=80):
 
 
 """
-Using hashmaps
+Using a counter array
+I realised you don't actually need hashmaps as all the keys are numbers
 """
 
 
 def get_count(initial_states, days=80):
 
-    # Making a state counter dict using comprehension
-    # Can also use Counter from collections
-    count = {n: initial_states.count(n) for n in range(9)}
+    # Making a state counter arrat using list comprehension
+    count = [initial_states.count(n) for n in range(9)]
 
     for _ in range(days):
         # save the number of fish in 0 state
@@ -42,7 +42,7 @@ def get_count(initial_states, days=80):
         # and that many fish are spawned again
         count[8] += zeros
 
-    return sum(count.values())
+    return sum(count)
 
 
 with open("../inputs/6_lanternfish.txt", "r") as f:
