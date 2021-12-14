@@ -8,13 +8,8 @@ def print_dots(dots):
 
     for i in y_axis:
         for j in x_axis:
-            try:
-                print(canvas[i][j], end="")
-            except:
-                print(i, j)
+            print(canvas[i][j], end="")
         print()
-
-    print()
 
 
 with open("../inputs/13_transparent_origami.txt", "r") as f:
